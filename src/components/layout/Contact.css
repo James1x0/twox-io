@@ -1,0 +1,49 @@
+.contact {
+  position: relative;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  text-align: right;
+  background-color: white;
+}
+
+.contact > .contact__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1em 2em;
+
+}
+
+.contact h1 {
+  font-size: 6em;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact h1 i {
+  opacity: 0;
+  font-style: normal;
+}
+
+.contact.animate-in h1 i {
+  opacity: 1;
+}
+
+.contact .contact__tel,
+.contact .contact__email {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contact .contact__tel > a,
+.contact .contact__email > a {
+  color: #F25381;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+
+.contact .contact__tel > a:hover,
+.contact .contact__email > a:hover {
+  color: #375152;
+  border-bottom: 2px dashed #375152;
+}

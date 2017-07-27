@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font__alternate {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.story__developer {
+  position: relative;
+  background-image: url('/img/james.jpg');
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  text-align: right;
+  color: #375152;
+}
+
+.story__developer > .story__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2em 2em 1em 30%;
+}
+
+.story__developer h1 {
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 1px #000;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s cubic-bezier(1,.01,0,.99);
+}
+
+.story__developer.animate-in h1 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.story__developer p {
+  font-size: 1.5em;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 1s all 1s cubic-bezier(1,.01,0,.99);
+}
+
+.story__developer.animate-in p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media all and (max-width: 1000px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .story__developer h1 {
+    font-size: 2em;
+  }
+
+  .story__developer p {
+    font-size: .8em;
+  }
+}
