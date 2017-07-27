@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+  background-color: #375152;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 45px 45px,
+    #375152, 60%,
+    #63F269 90%);
+}
+
+.hero > .hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1em 2em;
+  font-size: 6em;
+  text-shadow: 1px 2px 1px rgba(55, 81, 82, .8);
+  transform: translateX(-100%);
+  transition: all 1s cubic-bezier(1,.01,0,.99);
+}
+
+.hero.animate-in > .hero__content {
+  transform: translateX(0);
+}
+
+.hero > .hero__scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.hero > .hero__scroll-down > i {
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.hero > .hero__scroll-down > i {
+  animation: scrollDownI 1s ease-in-out infinite alternate;
+}
+
+.hero > .hero__scroll-down > i:nth-child(2) {
+  animation-delay: .25s;
+}
+
+.hero > .hero__scroll-down > i:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes scrollDownI {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
+@media all and (max-width: 1300px) {
+  .hero > .hero__content {
+    font-size: 4em;
+    padding: 1.5em 1em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .hero > .hero__content {
+    font-size: 3em;
+    padding: 2em 1em;
+  }
+}
