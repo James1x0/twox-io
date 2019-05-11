@@ -10,6 +10,14 @@
     #63F269 90%);
 }
 
+.hero.hero__art-page {
+  background-color: #375152;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 45px 45px,
+    #375152, 60%,
+    #F25381 90%);
+}
+
 .hero > .hero__content {
   position: absolute;
   top: 0;

@@ -23,11 +23,11 @@ class Navigation extends Component {
         ref={(nav) => { this.el = nav }}
       >
         <div className='navigation__logo' onClick={this.scrollToTop} />
-        <ul>
+        {this.props.location.pathname !== '/' && <ul>
           <li>
             <a href='#' onClick={this.scrollToContact}>Get in touch</a>
           </li>
-        </ul>
+        </ul>}
       </nav>
     )
   }

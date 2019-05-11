@@ -29,6 +29,10 @@ h1 {
   color: #375152;
 }
 
+.story__jensen {
+  background-image: url('/img/jensen.jpg');
+}
+
 .story__developer > .story__content {
   position: absolute;
   top: 50%;

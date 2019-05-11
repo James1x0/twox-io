@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Navigation from './layout/Navigation'
 import Contact from './layout/Contact'
 import Hero from './display/Hero'
-import './App.css'
+import './WebDesignPage.css'
 
 class App extends Component {
   constructor () {

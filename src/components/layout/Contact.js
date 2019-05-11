@@ -23,8 +23,12 @@ class Contact extends Component {
       })}>
         <div className='contact__content'>
           <h1>{letters}</h1>
-          <h2 className='contact__email'><a href='mailto:james@twox.io'>james@twox.io</a></h2>
-          <h2 className='contact__tel'><a href='tel:6055937302'>(605) 593-7302</a></h2>
+          {this.props.children ||
+            <div>
+              <h2 className='contact__email'><a href='mailto:james@twox.io'>james@twox.io</a></h2>
+              <h2 className='contact__tel'><a href='tel:6055937302'>(605) 593-7302</a></h2>
+            </div>
+          }
         </div>
       </section>
     )
