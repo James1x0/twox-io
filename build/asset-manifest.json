@@ -1,7 +1,12 @@
 {
-  "main.css": "static/css/main.7f3d90fd.css",
-  "main.css.map": "static/css/main.7f3d90fd.css.map",
-  "main.js": "static/js/main.d72e892c.js",
-  "main.js.map": "static/js/main.d72e892c.js.map",
-  "static/media/logo.png": "static/media/logo.1d205642.png"
+  "main.css": "static/css/main.0156a71b.css",
+  "main.css.map": "static/css/main.0156a71b.css.map",
+  "main.js": "static/js/main.c302b6af.js",
+  "main.js.map": "static/js/main.c302b6af.js.map",
+  "static/media/card.jpg": "static/media/card.7571341e.jpg",
+  "static/media/dragon.jpg": "static/media/dragon.b3d8188f.jpg",
+  "static/media/fairy.jpg": "static/media/fairy.253ba597.jpg",
+  "static/media/logo.png": "static/media/logo.1d205642.png",
+  "static/media/sheep.jpg": "static/media/sheep.3f5bddc2.jpg",
+  "static/media/ship.jpg": "static/media/ship.cc7557e6.jpg"
 }
