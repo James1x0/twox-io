@@ -3,8 +3,46 @@ import Waypoint from 'react-waypoint'
 import classNames from 'classnames'
 import Navigation from './layout/Navigation'
 import Contact from './layout/Contact'
+import ArtWork from './layout/ArtWork'
 import Hero from './display/Hero'
+import FairyImg from '../../public/img/fairy.jpg'
+import DragonImg from '../../public/img/dragon.jpg'
+import SheepImg from '../../public/img/sheep.jpg'
+import ShipImg from '../../public/img/ship.jpg'
+import CardImg from '../../public/img/card.jpg'
 import './ArtPage.css'
+
+const works = [{
+  title: 'Fairy',
+  medium: 'Pen & Watercolor',
+  description: 'A short study on a whimiscal fairy with traditional mediums. Completed in just a few hours.',
+  img: FairyImg
+}, {
+  title: 'Dragon Daycare',
+  medium: 'Pen & Watercolor',
+  description: 'Fantasy study - I am very happy with the end result!',
+  img: DragonImg
+}, {
+  title: 'Sheep & Ladybug',
+  medium: 'Pen & Watercolor',
+  description: 'Client illustration work for a children\'s book. This quirky character was fun to draw.',
+  img: SheepImg
+}, {
+  title: 'Monster of the Depths',
+  medium: 'Water-activated Ink & Pen',
+  description: 'Darker, erie style of a mythical creature from the depths. A combination of details and dark colors really sets the mood.',
+  img: ShipImg
+}, {
+  title: 'Bubbles for business',
+  medium: 'Procreate',
+  description: 'Bubbles for business was made on the go with my iPad utilizing procreate. This is the base design for my new business cards.',
+  img: CardImg
+}]
+
+const navItems = [{
+  text: 'Latest Works',
+  el: '.works'
+}]
 
 class App extends Component {
   constructor () {
@@ -31,7 +69,7 @@ class App extends Component {
 
     return (
       <div className='application__container'>
-        <Navigation location={this.props.location} />
+        <Navigation location={this.props.location} navItems={navItems} />
 
         <Waypoint
           onEnter={this._handleEnter('IndexHero')}
@@ -61,6 +99,14 @@ class App extends Component {
               <p>Whether it's for a children's book, logo, or marketing, Jensen's whimiscal artist style is bound to amaze. Ten years of experience, an Associate in Arts degree, & raw talent culminate into quality, professional illustrations.</p>
             </div>
           </Waypoint>
+        </section>
+
+        <section className='works'>
+          <h1>
+            Latest Works
+            <small>For more works, see my <a href='https://www.instagram.com/jennypennypaper/' target='_blank' rel='noopener'>ever-expanding feed on instagram</a>.</small>
+          </h1>
+          {works.map((work, i) => <ArtWork key={i} reversed={!!(i % 2)} work={work} />)}
         </section>
 
         <Waypoint

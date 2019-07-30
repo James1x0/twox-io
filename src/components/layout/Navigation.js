@@ -7,7 +7,7 @@ class Navigation extends Component {
   constructor () {
     super(...arguments)
     this._handleScroll = this._handleScroll.bind(this)
-    this.scrollToContact = this.scrollToContact.bind(this)
+    this.scrollToEl = this.scrollToEl.bind(this)
     this.scrollToTop = this.scrollToTop.bind(this)
   }
 
@@ -22,10 +22,13 @@ class Navigation extends Component {
         )}
         ref={(nav) => { this.el = nav }}
       >
-        <div className='navigation__logo' onClick={this.scrollToTop} />
+        <div className='navigation__logo' />
         {this.props.location.pathname !== '/' && <ul>
+          {this.props.navItems && this.props.navItems.map(item => (
+            <li key={item.el}><a href='#' onClick={(e) => this.scrollToEl(e, item.el)}>{item.text}</a></li>
+          ))}
           <li>
-            <a href='#' onClick={this.scrollToContact}>Get in touch</a>
+            <a href='#' onClick={(e) => this.scrollToEl(e, '.contact')} >Get in touch</a>
           </li>
         </ul>}
       </nav>
@@ -48,11 +51,12 @@ class Navigation extends Component {
     })
   }
 
-  scrollToContact (e) {
+  scrollToEl (e, el) {
     e.preventDefault()
+    console.log(el)
 
     $('html, body').animate({
-      scrollTop: $('.contact').offset().top
+      scrollTop: $(el).offset().top
     }, 1000)
   }
 

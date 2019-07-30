@@ -36,8 +36,14 @@ nav.application__navigation > ul {
   z-index: 3;
 }
 
-nav.application__navigation > li {
+nav.application__navigation > ul > li {
   text-transform: capitalize;
+  display: inline-block;
+  padding-left: 1em;
+}
+
+nav.application__navigation > ul > li:first-child {
+  padding-left: 0;
 }
 
 nav.application__navigation li > a,

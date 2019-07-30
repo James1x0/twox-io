@@ -1,0 +1,30 @@
+.works {
+  position: relative;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  text-align: left;
+  background-color: white;
+  padding: 1em 2em;
+}
+
+.works h1 {
+  font-size: 6em;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.works h1 small {
+  display: block;
+  font-size: .3em;
+}
+
+.works a {
+  color: #F25381;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+
+.works a:hover {
+  color: #375152;
+  border-bottom: 2px dashed #375152;
+}
