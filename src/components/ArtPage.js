@@ -10,34 +10,37 @@ import DragonImg from '../../public/img/dragon.jpg'
 import SheepImg from '../../public/img/sheep.jpg'
 import ShipImg from '../../public/img/ship.jpg'
 import CardImg from '../../public/img/card.jpg'
+import CookieImg from '../../public/img/ACookieTooMany.jpg'
+import GrandparentsImg from '../../public/img/grandparents.jpg'
+import QAMCImg from'../../public/img/QAMC.jpg'
+import SimonTedImg from '../../public/img/SimonandTed.jpg'
+import TreeImg from '../../public/img/TreePenWork.jpg'
 import './ArtPage.css'
 
 const works = [{
+  img: SimonTedImg,
   title: 'Fairy',
-  medium: 'Pen & Watercolor',
-  description: 'A short study on a whimiscal fairy with traditional mediums. Completed in just a few hours.',
-  img: FairyImg
+  medium: 'Pen & Watercolor'
+}, { 
+  img: GrandparentsImg
 }, {
-  title: 'Dragon Daycare',
-  medium: 'Pen & Watercolor',
-  description: 'Fantasy study - I am very happy with the end result!',
   img: DragonImg
 }, {
-  title: 'Sheep & Ladybug',
-  medium: 'Pen & Watercolor',
-  description: 'Client illustration work for a children\'s book. This quirky character was fun to draw.',
-  img: SheepImg
+  img: CookieImg
 }, {
-  title: 'Monster of the Depths',
-  medium: 'Water-activated Ink & Pen',
-  description: 'Darker, erie style of a mythical creature from the depths. A combination of details and dark colors really sets the mood.',
   img: ShipImg
 }, {
-  title: 'Bubbles for business',
-  medium: 'Procreate',
-  description: 'Bubbles for business was made on the go with my iPad utilizing procreate. This is the base design for my new business cards.',
+  img: SheepImg
+}, {
+  img: FairyImg
+}, {
+  img: QAMCImg
+}, {  
   img: CardImg
+}, {
+  img: TreeImg
 }]
+
 
 const navItems = [{
   text: 'Latest Works',
@@ -96,7 +99,7 @@ class App extends Component {
           >
             <div className='story__content'>
               <h1><span>Jensen</span> | <span>Artist & Illustrator</span></h1>
-              <p>Whether it's for a children's book, logo, or marketing, Jensen's whimiscal artist style is bound to amaze. Ten years of experience, an Associate in Arts degree, & raw talent culminate into quality, professional illustrations.</p>
+              <p>Jensen's whimiscal children's book illustrations are bound to amaze. Ten years of experience, an Associate in Arts degree, & raw talent culminate into quality, professional illustrations that make an impression.</p>
             </div>
           </Waypoint>
         </section>
@@ -106,7 +109,7 @@ class App extends Component {
             Latest Works
             <small>For more works, see my <a href='https://www.instagram.com/jennypennypaper/' target='_blank' rel='noopener'>ever-expanding feed on instagram</a>.</small>
           </h1>
-          {works.map((work, i) => <ArtWork key={i} reversed={!!(i % 2)} work={work} />)}
+          <div className="works__container">{works.map((work, i) => <ArtWork key={i} reversed={!!(i % 2)} work={work} />)}</div>
         </section>
 
         <Waypoint

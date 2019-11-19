@@ -23,22 +23,20 @@ class ArtWork extends Component {
     } = this.props.work || {}
 
     return (
-      <Waypoint
-        onEnter={this._handleEnter}
-        onLeave={this._handleLeave}
-      >
+      // <Waypoint
+      //   onEnter={this._handleEnter}
+      //   onLeave={this._handleLeave}
+      // >
         <div className={classNames('art', {
-          'animate-in': animateIn,
-          reverse: this.props.reversed
         })}>
+          <img className='art__img' src={img} alt={'Image for ' + title} />
           <div className='art__description'>
             <h3 className='art-description__title'>{title}</h3>
             <h5 className='art-description__medium'>{medium}</h5>
             <p className='art-description__desc'>{description}</p>
           </div>
-          <img className='art__img' src={img} alt={'Image for ' + title} />
         </div>
-      </Waypoint>
+      // </Waypoint>
     )
   }
 
