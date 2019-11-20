@@ -18,26 +18,54 @@ import TreeImg from '../../public/img/TreePenWork.jpg'
 import './ArtPage.css'
 
 const works = [{
-  img: SimonTedImg,
-  title: 'Fairy',
-  medium: 'Pen & Watercolor'
+  title: 'Simon and Ted',
+  medium: 'Pen, Watercolor and Colored Pencil',
+  description: 'Cartoon style of an adventurous boy and his best friend the sea turtle on an underwater adventure completed in watercolor, pen and colored pencil.',
+  img: SimonTedImg
 }, { 
+  title: 'Portrait of Grandparents',
+  medium: 'Pen, Watercolor and Colored Pencil',
+  description: 'Cartoon style of sweet biracial grandparents completed in watercolor, pen and colored pencil.',
   img: GrandparentsImg
 }, {
+  title: 'Dragon Daycare',
+  medium: 'Pen, Watercolor and Colored Pencil',
+  description: 'Cartoon style of a Dragon Daycare Facility completed in watercolor, pen and colored pencil.',
   img: DragonImg
 }, {
+  title: 'A Cookie Too Many',
+  medium: 'Pen and Watercolor',
+  description: 'Cartoon style of Santa stuck in a chimney completed in watercolor and pen.',
   img: CookieImg
 }, {
+  title: 'Monster of Disgise',
+  medium: 'Pen and Water Based Ink',
+  description: 'Cartoon style of a Sea Monster with a Mermaid tail luring a fishing boat completed in water based inks and pen.',
   img: ShipImg
 }, {
+  title: 'A Sheeps Joy',
+  medium: 'Pen and Watercolor.',
+  description: 'Cartoon style of an elated sheep watching a ladybug completed in watercolor and pen.',
   img: SheepImg
 }, {
+  title: 'The Fairy Garden',
+  medium: 'Pen and Watercolor',
+  description: 'Cartoon style of a blissful fairy completed in watercolor and pen.',
   img: FairyImg
 }, {
+  title: 'Mechanic',
+  medium: 'Digital, Procreate',
+  description: 'Cartoon style of a mechanic for use in logo completed in the digital medium Procreate.',
   img: QAMCImg
 }, {  
+  title: 'When Fish Fly',
+  medium: 'Digital, Procreate',
+  description: 'Cartoon style of a girl blowing bubbles that contain fish completed in the digital medium Procreate.',
   img: CardImg
 }, {
+  title: 'Treescape',
+  medium: 'Pen',
+  description: 'Cartoon linework of a landscape  including  mountains, tree and pond completed in Pen.',
   img: TreeImg
 }]
 

@@ -29,7 +29,7 @@ class ArtWork extends Component {
       // >
         <div className={classNames('art', {
         })}>
-          <img className='art__img' src={img} alt={'Image for ' + title} />
+          <img className='art__img' src={img} alt={`Image for ${title}, ${medium}, ${description}`} />
           <div className='art__description'>
             <h3 className='art-description__title'>{title}</h3>
             <h5 className='art-description__medium'>{medium}</h5>
