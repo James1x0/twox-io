@@ -23,6 +23,7 @@ class Navigation extends Component {
         ref={(nav) => { this.el = nav }}
       >
         <div className='navigation__logo' />
+        {this.props.centerImg ? <img className='navigation__center-img' src={this.props.centerImg} /> : null}
         {this.props.location.pathname !== '/' && <ul>
           {this.props.navItems && this.props.navItems.map(item => (
             <li key={item.el}><a href='#' onClick={(e) => this.scrollToEl(e, item.el)}>{item.text}</a></li>

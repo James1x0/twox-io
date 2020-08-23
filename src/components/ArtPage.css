@@ -1,4 +1,4 @@
-.works {
+.artsy__section {
   position: relative;
   background-blend-mode: overlay;
   min-height: 100vh;
@@ -15,24 +15,63 @@
   justify-content: space-between;
 }
 
-.works h1 {
+.artsy__section h1 {
   font-size: 6em;
   font-weight: 400;
   font-family: 'Playfair Display', serif;
 }
 
-.works h1 small {
+.artsy__section h1 small {
   display: block;
   font-size: .3em;
 }
 
-.works a {
+.artsy__section a {
   color: #F25381;
   text-decoration: none;
   transition: color .4s ease-in-out;
 }
 
-.works a:hover {
+.artsy__section a:hover {
   color: #375152;
   border-bottom: 2px dashed #375152;
+}
+
+.reviews > .reviews__text-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.reviews > .reviews__text-blocks > .review-text-block {
+  width: 30%;
+  position: relative;
+  padding: 1em;
+  /* background: radial-gradient(
+    ellipse farthest-corner at 10px 45px,
+    #FFFFFF, 50%,
+    #ccc 90%); */
+  /* color: white; */
+  margin-bottom: 1em;
+  /* border-radius: 1rem; */
+  /* box-shadow: 1px 1px 5px #375152; */
+}
+
+.reviews > .reviews__text-blocks > .review-text-block > p {
+  text-indent: 20px;
+}
+
+.reviews > .reviews__text-blocks > .review-text-block .five-stars {
+  color: #fef023;
+  float: right;
+  text-shadow:1px 1px 1px #375152;
+}
+
+@media screen and (max-width: 900px) {
+  .reviews > .reviews__text-blocks > .review-text-block {
+    width: 100%;
+  }
+
 }

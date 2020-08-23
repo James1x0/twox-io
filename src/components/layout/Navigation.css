@@ -16,7 +16,7 @@ nav.application__navigation--opaque {
   background-color: rgba(255, 255, 255, .8);
 }
 
-nav.application__navigation > .navigation__logo {
+nav.application__navigation .navigation__logo {
   position: relative;
   background-image: url('./logo.png');
   background-position: center;

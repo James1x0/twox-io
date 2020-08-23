@@ -10,12 +10,24 @@
   /* padding: 5px 10px; */
 }
 
+nav.application__navigation {
+  align-items: center;
+  justify-content: flex-start;
+}
+nav.application__navigation > ul {
+  margin-left: auto;
+}
+
+nav .navigation__center-img {
+  height: 40px;
+  margin-left: 1em;
+}
+
 @media all and (max-width: 800px) {
   .art {
     width: 50%;
   }
 }
-
 
 @media all and (max-width: 600px) {
   .art {
