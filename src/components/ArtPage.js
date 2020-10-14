@@ -13,6 +13,10 @@ import CardImg from '../../public/img/card.jpg'
 import CookieImg from '../../public/img/ACookieTooMany.jpg'
 import GrandparentsImg from '../../public/img/grandparents.jpg'
 import QAMCImg from'../../public/img/QAMC.jpg'
+import Character from'../../public/img/Character_Design.jpg'
+import EmergencyR from'../../public/img/EmergencyResponders.jpg'
+import Frankenstein from'../../public/img/Frankenstein.jpg'
+import Gorilla from'../../public/img/Gorilla.jpg'
 import SimonTedImg from '../../public/img/SimonandTed.jpg'
 import TreeImg from '../../public/img/TreePenWork.jpg'
 import RetroDragon from '../../public/img/RetroDragon.jpg'
@@ -27,6 +31,18 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import './ArtPage.css'
 
 const works = [{
+  title: 'Gorilla',
+  img: Gorilla
+}, {
+  title: 'Characters',
+  img: Character
+}, {
+  title: 'responders',
+  img: EmergencyR
+}, {
+  title: 'Frankenstein',
+  img: Frankenstein
+}, {
   title: 'Gators with pizza',
   img: Gators
 }, {
@@ -46,7 +62,7 @@ const works = [{
 }, {
   title: 'Fancy Shoe',
   img: FancyShoe
-}, {  
+}, {
   title: 'When Fish Fly',
   medium: 'Digital, Procreate',
   description: 'Cartoon style of a girl blowing bubbles that contain fish completed in the digital medium Procreate.',
@@ -56,7 +72,7 @@ const works = [{
   medium: 'Pen, Watercolor and Colored Pencil',
   description: 'Cartoon style of an adventurous boy and his best friend the sea turtle on an underwater adventure completed in watercolor, pen and colored pencil.',
   img: SimonTedImg
-}, { 
+}, {
   title: 'Portrait of Grandparents',
   medium: 'Pen, Watercolor and Colored Pencil',
   description: 'Cartoon style of sweet biracial grandparents completed in watercolor, pen and colored pencil.',
@@ -77,6 +93,12 @@ const works = [{
 }]
 
 const reviews = [{
+  text: 'Jensen was awesome to work with! She was able to take my rough sketches and add her own creative touch and turn them into something special. She was always ahead of deadlines and was very clear with what she was working on. When provided ideas and edits to make, she did a great job with figuring out how to implement them right away. I would highly recommend her for any sort of illustration or artistic project as she can do some amazing work!',
+  person: 'Shane'
+}, {
+  text: 'Would definitely work with them again.',
+  person: 'Miller'
+}, {
   text: 'Jensen was an absolute pleasure to work with! I gave her my ideas and she created a workbook that was beyond my expectations! She also communicated effectively and revised any changes I suggested promptly! Jensen also helped walk me through the copyright site to ensure my workbook had a copyright. I would hire Jensen again for any additional jobs for designing!',
   person: 'Christina'
 }, {
@@ -207,8 +229,7 @@ class App extends Component {
             <Contact animateIn={animateInContact}>
               <h2 className='contact__email'><a href='mailto:jensen@twox.io'>jensen@twox.io</a></h2>
               <h2 className='contact__tel'><a href='tel:6055937396'>(605) 593-7396</a></h2>
-              <h3 className='contact__tel'><a href='https://www.upwork.com/o/profiles/users/_~01fde082ee2ea9a07b/' target='_blank'>Hire me</a></h3>
-              <h3 className='contact__tel'><a href='https://www.instagram.com/jennypennypaper' target='_blank'>Follow me on Instagram</a></h3>
+              <h2 className='contact__tel'><a href='https://www.instagram.com/jennypennypaper' target='_blank'>Follow me on Instagram</a></h2>
             </Contact>
           </div>
         </Waypoint>
