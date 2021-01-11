@@ -5,91 +5,87 @@ import Navigation from './layout/Navigation'
 import Contact from './layout/Contact'
 import ArtWork from './layout/ArtWork'
 import Hero from './display/Hero'
-import FairyImg from '../../public/img/fairy.jpg'
-import DragonImg from '../../public/img/dragon.jpg'
-import SheepImg from '../../public/img/sheep.jpg'
-import ShipImg from '../../public/img/ship.jpg'
-import CardImg from '../../public/img/card.jpg'
-import CookieImg from '../../public/img/ACookieTooMany.jpg'
-import GrandparentsImg from '../../public/img/grandparents.jpg'
-import QAMCImg from'../../public/img/QAMC.jpg'
-import Character from'../../public/img/Character_Design.jpg'
-import EmergencyR from'../../public/img/EmergencyResponders.jpg'
+import Wood from '../../public/img/Wood.jpg'
+import Snowman from '../../public/img/Snowman.jpg'
+import Scarf from '../../public/img/Scarf.jpg'
+import Smores from '../../public/img/Smores.jpg'
+import Reindeer from '../../public/img/Reindeer.jpg'
+import Poinsetta from'../../public/img/Poinsettia_.jpg'
+import Pancake from'../../public/img/Pancake.jpg'
+import Owl from'../../public/img/Owl.jpg'
 import Frankenstein from'../../public/img/Frankenstein.jpg'
-import Gorilla from'../../public/img/Gorilla.jpg'
-import SimonTedImg from '../../public/img/SimonandTed.jpg'
-import TreeImg from '../../public/img/TreePenWork.jpg'
-import RetroDragon from '../../public/img/RetroDragon.jpg'
-import Train from '../../public/img/Train.png'
-import FancyShoe from '../../public/img/FancyShoe.png'
-import Girl from '../../public/img/Girl.jpg'
+import Mouse from'../../public/img/Mouse.jpg'
+import Mittens from '../../public/img/Mittens.jpg'
+import Leaves from '../../public/img/Leaves.jpg'
+import Pig from '../../public/img/HogHoedown.jpg'
+import Donkey from '../../public/img/El_No_No.jpg'
+import Cow from '../../public/img/DancingPartner.jpg'
+import Book from '../../public/img/Book.jpg'
 import Gators from '../../public/img/Gators.jpg'
-import Camping from '../../public/img/Camping.jpg'
+import CardImg from '../../public/img/card.jpg'
+import Astronauts from '../../public/img/Astronauts_.jpg'
 import SignatureImg from '../../public/img/jensensig.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import './ArtPage.css'
 
 const works = [{
-  title: 'Gorilla',
-  img: Gorilla
+  title: 'Cow',
+  img: Cow
 }, {
-  title: 'Characters',
-  img: Character
+  title: 'Donkey',
+  img: Donkey
 }, {
-  title: 'responders',
-  img: EmergencyR
+  title: 'Pig',
+  img: Pig
+}, {
+  title: 'Reindeer',
+  img: Reindeer
+}, {
+  title: 'Smores',
+  img: Smores
+}, {
+  title: 'Owl',
+  img: Owl
+}, {
+  title: 'Leaves',
+  img: Leaves
+}, {
+  title: 'Scarf',
+  img: Scarf
+}, {
+  title: 'Pancake',
+  img: Pancake
+}, {
+  title: 'Astronauts',
+  img: Astronauts
+}, {
+  title: 'Wood',
+  img: Wood
+}, {
+  title: 'Poinsetta',
+  img: Poinsetta
+}, {
+  title: 'Snowman',
+  img: Snowman
+}, {
+  title: 'Mittens',
+  img: Mittens
+}, {
+  title: 'Mouse',
+  img: Mouse
 }, {
   title: 'Frankenstein',
   img: Frankenstein
 }, {
-  title: 'Gators with pizza',
+  title: 'Gators',
   img: Gators
 }, {
-  title: 'Train',
-  img: Train
-}, {
-  title: 'Camping',
-  img: Camping
-}, {
-  title: 'Girl',
-  img: Girl
-}, {
-  title: 'Dragon Daycare',
-  medium: 'Pen, Watercolor and Colored Pencil',
-  description: 'Cartoon style of a Dragon Daycare Facility completed in watercolor, pen and colored pencil.',
-  img: DragonImg
-}, {
-  title: 'Fancy Shoe',
-  img: FancyShoe
+  title: 'Book',
+  img: Book
 }, {
   title: 'When Fish Fly',
-  medium: 'Digital, Procreate',
-  description: 'Cartoon style of a girl blowing bubbles that contain fish completed in the digital medium Procreate.',
   img: CardImg
-}, {
-  title: 'Simon and Ted',
-  medium: 'Pen, Watercolor and Colored Pencil',
-  description: 'Cartoon style of an adventurous boy and his best friend the sea turtle on an underwater adventure completed in watercolor, pen and colored pencil.',
-  img: SimonTedImg
-}, {
-  title: 'Portrait of Grandparents',
-  medium: 'Pen, Watercolor and Colored Pencil',
-  description: 'Cartoon style of sweet biracial grandparents completed in watercolor, pen and colored pencil.',
-  img: GrandparentsImg
-}, {
-  title: 'Retro Dragon',
-  img: RetroDragon
-}, {
-  title: 'A Sheeps Joy',
-  medium: 'Pen and Watercolor.',
-  description: 'Cartoon style of an elated sheep watching a ladybug completed in watercolor and pen.',
-  img: SheepImg
-}, {
-  title: 'The Fairy Garden',
-  medium: 'Pen and Watercolor',
-  description: 'Cartoon style of a blissful fairy completed in watercolor and pen.',
-  img: FairyImg
 }]
 
 const reviews = [{
