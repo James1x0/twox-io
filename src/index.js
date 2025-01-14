@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 import Routes from './routes'
 import './index.css'
 
+document.window.href = 'https://jamesfrommontana.com';
+
 ReactDOM.render(
   <Routes />,
   document.getElementById('root')
