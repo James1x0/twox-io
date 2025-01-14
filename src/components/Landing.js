@@ -31,8 +31,7 @@ class App extends Component {
             'animate-in': animateInLandingHero
           })}>
             <div className='hero__content'>
-              <Link to='/art'>Art & Illustration</Link>
-              <Link to='/web'>Web App Development</Link>
+              <Link to='/web'>Web Development</Link>
             </div>
           </div>
         </Waypoint>
