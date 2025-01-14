@@ -44,23 +44,6 @@ class App extends Component {
             />
           </div>
         </Waypoint>
-
-        <section className={
-          classNames('story__developer', {
-            'animate-in': animateInStory
-          })}
-        >
-          <Waypoint
-            onEnter={this._handleEnter('Story')}
-            onLeave={this._handleLeave('Story')}
-          >
-            <div className='story__content'>
-              <h1><span>James Collins</span> | <span>Founder + Developer</span></h1>
-              <p><strong>Meet the developer</strong>. James comes from a broad background of tech and has over <strong>6 years</strong> in professional software development experience. He has built elegant <strong>full-stack</strong> solutions with frameworks like React/Ember and Node+Koa/Express.</p>
-            </div>
-          </Waypoint>
-        </section>
-
         <Waypoint
           onEnter={this._handleEnter('Contact')}
           onLeave={this._handleLeave('Contact')}
